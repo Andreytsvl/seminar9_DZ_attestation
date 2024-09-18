@@ -7,8 +7,14 @@ Write("Введите число M ");
 int m = int.Parse(ReadLine());
 Write("Введите число N ");
 int n = int.Parse(ReadLine());
-WriteLine(RowNumber(m, n));
-
+if(m<n)
+{
+    WriteLine(RowNumber(m, n));
+}
+else
+{
+    WriteLine(RowNumber(n, m));
+}
 
 string RowNumber(int m, int n)
 {
